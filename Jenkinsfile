@@ -6,6 +6,8 @@ pipeline {
     }
   }
 
+  triggers { pollSCM('* * * * *') }
+
   options {
     ansiColor('xterm')
   }
