@@ -27,6 +27,7 @@ pipeline {
         sh 'echo hello world'
         sh 'echo ${SAMPLE_URL}'
         sh 'echo PERSON-${PERSON}'
+        sh 'echo AKR'
       }
     }
   }
