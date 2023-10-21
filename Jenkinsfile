@@ -6,11 +6,17 @@ pipeline {
     }
   }
 
+  environment {
+    SAMPLE_URL="example.com"
+  }
+
   stages {
 
     stage('one') {
       steps {
         sh 'echo hello world'
+        sh 'echo ${SAMPLE_URL}'
+
       }
     }
   }
