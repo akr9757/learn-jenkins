@@ -14,4 +14,9 @@ pipeline {
       }
     }
   }
+  post {
+    always {
+      sh 'echo post clean up steps'
+    }
+  }
 }
